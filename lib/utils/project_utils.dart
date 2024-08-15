@@ -6,7 +6,8 @@ List<ProjectModel> hobbyProjectsList = [
     title: 'Chatty App',
     subtitle:
         'This is a comprehensive Chatty app for chatting with friends and family.',
-    androidLink: '',
+    androidLink:
+        'https://drive.google.com/file/d/10LMeQYdsBnjBXJ1wI25r-C1HoxbNDBIZ/view?usp=sharing',
   ),
   ProjectModel(
     image: 'assets/projects/calculator.png',
