@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/helpers/scroll_to_key.dart';
 import 'package:typewritertext/typewritertext.dart';
+import 'package:widget_and_text_animator/widget_and_text_animator.dart';
 
 class MainDesktop extends StatefulWidget {
   const MainDesktop({
@@ -58,10 +59,13 @@ class _MainDesktopState extends State<MainDesktop> {
               ),
             ],
           ),
-          Image.asset(
-            'assets/flutter_branding.png',
-            width: MediaQuery.of(context).size.width / 2,
-            fit: BoxFit.scaleDown,
+          WidgetAnimator(
+            atRestEffect: WidgetRestingEffects.wave(),
+            child: Image.asset(
+              'assets/flutter_branding.png',
+              width: MediaQuery.of(context).size.width / 2,
+              fit: BoxFit.scaleDown,
+            ),
           ),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/helpers/scroll_to_key.dart';
 import 'package:typewritertext/typewritertext.dart';
+import 'package:widget_and_text_animator/widget_and_text_animator.dart';
 
 class MainMobile extends StatefulWidget {
   const MainMobile({
@@ -36,9 +37,12 @@ class _MainMobileState extends State<MainMobile> {
                 ],
               ).createShader(bounds);
             },
-            child: Image.asset(
-              'assets/flutter_branding.png',
-              width: MediaQuery.sizeOf(context).width,
+            child: WidgetAnimator(
+              atRestEffect: WidgetRestingEffects.wave(),
+              child: Image.asset(
+                'assets/flutter_branding.png',
+                width: MediaQuery.sizeOf(context).width,
+              ),
             ),
           ),
           const SizedBox(
