@@ -18,7 +18,7 @@ class Footer extends StatelessWidget {
         children: [
           Flexible(
             child: Text(
-              "Ahmed Elessawy, All Rights Reserved, Thanks To Shohruh AK For This Theme",
+              "Ahmed Elessawy, All Rights Reserved.",
             ),
           )
         ],
