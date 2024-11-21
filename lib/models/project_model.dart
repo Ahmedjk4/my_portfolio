@@ -5,7 +5,7 @@ class ProjectModel {
   final String? androidLink;
   final String? iosLink;
   final String? webLink;
-
+  final String? githubLink;
   ProjectModel({
     required this.title,
     required this.subtitle,
@@ -13,5 +13,6 @@ class ProjectModel {
     this.androidLink,
     this.iosLink,
     this.webLink,
+    this.githubLink,
   });
 }

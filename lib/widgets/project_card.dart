@@ -108,6 +108,21 @@ class ProjectCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                if (projectModel.githubLink != null)
+                  Padding(
+                    padding: const EdgeInsets.only(left: 6.0),
+                    child: InkWell(
+                      onTap: () async {
+                        try {
+                          await launchUrl(Uri.parse(projectModel.githubLink!));
+                        } catch (_) {}
+                      },
+                      child: Image.asset(
+                        "assets/github.png",
+                        width: 17,
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),
