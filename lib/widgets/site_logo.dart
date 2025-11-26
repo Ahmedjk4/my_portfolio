@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/constants/shoruh_colors.dart';
 
 class SiteLogo extends StatefulWidget {
   const SiteLogo({
@@ -12,21 +13,29 @@ class SiteLogo extends StatefulWidget {
 }
 
 class _SiteLogoState extends State<SiteLogo> {
-  String text = "Click On Me";
+  String text = "Ahmed Elessawy";
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         widget.onTap();
-        setState(() {
-          text = "Ahmed Elessawy";
-        });
       },
-      child: Text(
-        text,
-        style: const TextStyle(
-          color: Colors.amber,
-        ),
+      child: Row(
+        children: [
+          const CircleAvatar(
+            radius: 40,
+            backgroundImage: AssetImage(
+              "pfp.jpg",
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            text,
+            style: const TextStyle(
+              color: CustomColor.whitePrimary,
+            ),
+          ),
+        ],
       ),
     );
   }

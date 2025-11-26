@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/shoruh_colors.dart';
-import 'package:my_portfolio/constants/skills_items.dart';
+import 'package:my_portfolio/models/skills_items.dart';
 
 class SkillsMobile extends StatelessWidget {
   const SkillsMobile({super.key});

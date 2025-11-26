@@ -74,7 +74,7 @@ class ProjectCard extends StatelessWidget {
                       } catch (_) {}
                     },
                     child: Image.asset(
-                      "assets/android_icon.png",
+                      "assets/icons/android_icon.png",
                       width: 17,
                     ),
                   ),
@@ -88,7 +88,7 @@ class ProjectCard extends StatelessWidget {
                         } catch (_) {}
                       },
                       child: Image.asset(
-                        "assets/ios_icon.png",
+                        "assets/icons/ios_icon.png",
                         width: 19,
                       ),
                     ),
@@ -103,7 +103,7 @@ class ProjectCard extends StatelessWidget {
                         } catch (_) {}
                       },
                       child: Image.asset(
-                        "assets/web_icon.png",
+                        "assets/icons/web_icon.png",
                         width: 17,
                       ),
                     ),
@@ -118,7 +118,7 @@ class ProjectCard extends StatelessWidget {
                         } catch (_) {}
                       },
                       child: Image.asset(
-                        "assets/github.png",
+                        "assets/icons/github.png",
                         width: 17,
                       ),
                     ),

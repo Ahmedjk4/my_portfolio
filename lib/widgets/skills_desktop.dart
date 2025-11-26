@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/shoruh_colors.dart';
-import 'package:my_portfolio/constants/skills_items.dart';
+import 'package:my_portfolio/models/skills_items.dart';
 
 class SkillsDesktop extends StatelessWidget {
   const SkillsDesktop({
@@ -29,8 +29,7 @@ class SkillsDesktop extends StatelessWidget {
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: ListTile(
-                    contentPadding:
-                        const EdgeInsets.symmetric(
+                    contentPadding: const EdgeInsets.symmetric(
                       horizontal: 20.0,
                       vertical: 10.0,
                     ),
@@ -62,8 +61,7 @@ class SkillsDesktop extends StatelessWidget {
                     ),
                     backgroundColor: CustomColor.bgLight2,
                     label: Text(skillItems[i]["title"]),
-                    avatar:
-                        Image.asset(skillItems[i]["img"]),
+                    avatar: Image.asset(skillItems[i]["img"]),
                   ),
               ],
             ),

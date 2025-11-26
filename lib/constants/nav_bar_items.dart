@@ -6,7 +6,6 @@ const kNavBarItems = [
   "Projects",
   "Career",
   "Contact",
-  "Blog",
 ];
 
 const kNavBarIcons = [
@@ -15,8 +14,6 @@ const kNavBarIcons = [
   Icons.apps,
   Icons.book,
   Icons.quick_contacts_mail,
-  Icons.web,
 ];
 
-final List<GlobalKey<NavigatorState>> navBarKeys =
-    List.generate(5, (index) => GlobalKey<NavigatorState>());
+final List<GlobalKey> navBarKeys = List.generate(5, (index) => GlobalKey());

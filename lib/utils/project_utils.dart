@@ -60,6 +60,15 @@ List<ProjectModel> hobbyProjectsList = [
 // WORK PROJECTS
 List<ProjectModel> workProjectsList = [
   ProjectModel(
+    githubLink: "https://github.com/Ahmedjk4/physio-app",
+    androidLink:
+        "https://drive.google.com/file/d/11sUkIGm4TXam74T04kL_1ZuDgCGeptaP/view?usp=sharing",
+    image: 'assets/projects/physio.png',
+    title: 'Physio App',
+    subtitle:
+        'Physio client app featuring AI-powered diet plans, training videos per body part, secure chat between physiotherapists and patients, and an admin dashboard.',
+  ),
+  ProjectModel(
     githubLink: "https://github.com/Ahmedjk4/ecommerce_app/tree/main",
     androidLink:
         "https://drive.google.com/file/d/1-0weuRYeQc-obpAm8LkUoWIPs7C905M_/view?usp=sharing",
