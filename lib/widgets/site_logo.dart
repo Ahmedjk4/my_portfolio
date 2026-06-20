@@ -25,7 +25,7 @@ class _SiteLogoState extends State<SiteLogo> {
           const CircleAvatar(
             radius: 40,
             backgroundImage: AssetImage(
-              "assets/pfp.jpg",
+              "assets/icon.png",
             ),
           ),
           const SizedBox(width: 8),
